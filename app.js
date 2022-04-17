@@ -15,7 +15,7 @@ var cookieParser = require('cookie-parser');
 
 var client_id = '912b62a0e3764f74a8338447d76921e8'; // Your client id
 var client_secret = 'ab50baa7f7ed4845b2561224aa1cb3d9'; // Your secret
-var redirect_uri = 'http://hope-env.eba-akpxi3i4.us-west-1.elasticbeanstalk.com/'; // Your redirect uri
+var redirect_uri = 'http://hope-env.eba-akpxi3i4.us-west-1.elasticbeanstalk.com/callback'; // Your redirect uri
 
 /**
  * Generates a random string containing numbers and letters
