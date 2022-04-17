@@ -13,9 +13,9 @@ var cors = require('cors');
 var querystring = require('querystring');
 var cookieParser = require('cookie-parser');
 
-var client_id = '59dc23a380a74759acf625a812f933fa'; // Your client id
-var client_secret = 'e5fae1dc64e3429b87b25e0721b38945'; // Your secret
-var redirect_uri = 'http://localhost:8888/callback'; // Your redirect uri
+var client_id = '912b62a0e3764f74a8338447d76921e8'; // Your client id
+var client_secret = 'ab50baa7f7ed4845b2561224aa1cb3d9'; // Your secret
+var redirect_uri = 'http://hope-env.eba-akpxi3i4.us-west-1.elasticbeanstalk.com/'; // Your redirect uri
 
 /**
  * Generates a random string containing numbers and letters
@@ -144,4 +144,4 @@ app.get('/refresh_token', function(req, res) {
 });
 
 console.log('Listening on 8888');
-app.listen(8888);
+app.listen(process.env.PORT || 8888);
